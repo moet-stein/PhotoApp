@@ -31,15 +31,7 @@ class SignupFormModelValidator {
     }
     
     func isEmailValid(email: String) -> Bool {
-        var returnValue = true
-        
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        
-        returnValue = emailPred.evaluate(with: email)
-        
-        return returnValue
+        return NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: email)
         
     }
     
@@ -54,12 +46,6 @@ class SignupFormModelValidator {
     }
     
     func doPasswordsMatch(password: String, repeatPassword: String) -> Bool {
-        var returnValue = true
-        
-        if password != repeatPassword {
-            returnValue = false
-        }
-        
-        return returnValue
+        return password == repeatPassword
     }
 }
