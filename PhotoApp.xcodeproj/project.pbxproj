@@ -18,6 +18,7 @@
 		60AD1AEA2875D334003E32D8 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AE92875D334003E32D8 /* SignupConstants.swift */; };
 		60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AEB2876E758003E32D8 /* SignupWebServiceTests.swift */; };
 		60AD1AEE28770337003E32D8 /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AED28770337003E32D8 /* SignupWebService.swift */; };
+		60AD1AF0287703D4003E32D8 /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AEF287703D4003E32D8 /* SignupFormRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		60AD1AE92875D334003E32D8 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		60AD1AEB2876E758003E32D8 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		60AD1AED28770337003E32D8 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		60AD1AEF287703D4003E32D8 /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				609C3CE92875CF3C0021AEA3 /* SignupFormModelValidator.swift */,
 				60AD1AE92875D334003E32D8 /* SignupConstants.swift */,
 				60AD1AED28770337003E32D8 /* SignupWebService.swift */,
+				60AD1AEF287703D4003E32D8 /* SignupFormRequestModel.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				609C3CC72875CD820021AEA3 /* AppDelegate.swift in Sources */,
 				609C3CEA2875CF3C0021AEA3 /* SignupFormModelValidator.swift in Sources */,
 				60AD1AEA2875D334003E32D8 /* SignupConstants.swift in Sources */,
+				60AD1AF0287703D4003E32D8 /* SignupFormRequestModel.swift in Sources */,
 				60AD1AEE28770337003E32D8 /* SignupWebService.swift in Sources */,
 				609C3CC92875CD820021AEA3 /* SceneDelegate.swift in Sources */,
 			);
