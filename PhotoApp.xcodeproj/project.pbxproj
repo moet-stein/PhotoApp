@@ -16,6 +16,7 @@
 		609C3CE82875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609C3CE72875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift */; };
 		609C3CEA2875CF3C0021AEA3 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609C3CE92875CF3C0021AEA3 /* SignupFormModelValidator.swift */; };
 		60AD1AEA2875D334003E32D8 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AE92875D334003E32D8 /* SignupConstants.swift */; };
+		60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AEB2876E758003E32D8 /* SignupWebServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		609C3CE72875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		609C3CE92875CF3C0021AEA3 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 		60AD1AE92875D334003E32D8 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
+		60AD1AEB2876E758003E32D8 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				609C3CE72875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift */,
+				60AD1AEB2876E758003E32D8 /* SignupWebServiceTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */,
 				609C3CE82875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
