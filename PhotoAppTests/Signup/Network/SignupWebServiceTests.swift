@@ -66,7 +66,7 @@ class SignupWebServiceTests: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
     }
     
-    func testSignupWebservice_WehnEmptyURLStringProvided_RetrunsError() {
+    func testSignupWebservice_WhenEmptyURLStringProvided_RetrunsError() {
         //Arrange
         let expectation = self.expectation(description: "An empty request URL string expectaion")
         sut = SignupWebService(urlString: "")
