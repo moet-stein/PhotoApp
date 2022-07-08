@@ -21,7 +21,11 @@ class SignupPresenterTests: XCTestCase {
     
     func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         //Arrange
-        let signupFormModel = SignupFormModel()
+        let signupFormModel = SignupFormModel(firstName: "Moe",
+                                              lastName: "Stein",
+                                              email: "test@test.com",
+                                              password: "12345678",
+                                              repeatPassword: "12345678")
         
         //Act
         
