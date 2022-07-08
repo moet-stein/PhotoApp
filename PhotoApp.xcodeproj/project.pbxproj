@@ -126,12 +126,11 @@
 		60AD1AF528770638003E32D8 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				60AD1B09287879A4003E32D8 /* Protocols */,
 				60AD1B0228786F1B003E32D8 /* Presenters */,
 				60AD1AF8287706B5003E32D8 /* Network */,
 				60AD1AF728770683003E32D8 /* Controllers */,
 				60AD1AF628770641003E32D8 /* Models */,
-				60AD1B0328786F28003E32D8 /* SignupPresenter.swift */,
-				60AD1B0728787085003E32D8 /* SignupModelValidatorProtocol.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -168,11 +167,10 @@
 		60AD1AF9287706CB003E32D8 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				60AD1B0B287879CB003E32D8 /* Mocks */,
+				60AD1B0A287879B9003E32D8 /* Presenters */,
 				60AD1AFB287706DE003E32D8 /* Network */,
 				60AD1AFA287706D8003E32D8 /* Models */,
-				60AD1AFC287715AE003E32D8 /* MockURLProtocol.swift */,
-				60AD1AFE28786D91003E32D8 /* SignupPresenterTests.swift */,
-				60AD1B0528786FF1003E32D8 /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -196,8 +194,34 @@
 		60AD1B0228786F1B003E32D8 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				60AD1B0328786F28003E32D8 /* SignupPresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		60AD1B09287879A4003E32D8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60AD1B0728787085003E32D8 /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		60AD1B0A287879B9003E32D8 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				60AD1AFE28786D91003E32D8 /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		60AD1B0B287879CB003E32D8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				60AD1AFC287715AE003E32D8 /* MockURLProtocol.swift */,
+				60AD1B0528786FF1003E32D8 /* MockSignupModelValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
