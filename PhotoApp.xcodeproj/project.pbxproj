@@ -22,6 +22,7 @@
 		60AD1AF228770560003E32D8 /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AF12877055F003E32D8 /* SignupResponseModel.swift */; };
 		60AD1AF4287705B7003E32D8 /* SignupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AF3287705B7003E32D8 /* SignupError.swift */; };
 		60AD1AFD287715AE003E32D8 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AFC287715AE003E32D8 /* MockURLProtocol.swift */; };
+		60AD1AFF28786D91003E32D8 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1AFE28786D91003E32D8 /* SignupPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		60AD1AF12877055F003E32D8 /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
 		60AD1AF3287705B7003E32D8 /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 		60AD1AFC287715AE003E32D8 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		60AD1AFE28786D91003E32D8 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				60AD1AFB287706DE003E32D8 /* Network */,
 				60AD1AFA287706D8003E32D8 /* Models */,
 				60AD1AFC287715AE003E32D8 /* MockURLProtocol.swift */,
+				60AD1AFE28786D91003E32D8 /* SignupPresenterTests.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				60AD1AFD287715AE003E32D8 /* MockURLProtocol.swift in Sources */,
 				60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */,
+				60AD1AFF28786D91003E32D8 /* SignupPresenterTests.swift in Sources */,
 				609C3CE82875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
