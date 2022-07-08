@@ -25,6 +25,7 @@ class SignupWebServiceTests: XCTestCase {
         sut = nil
         signFromRequestFormModel = nil
         MockURLProtocol.stubResponseData = nil
+        MockURLProtocol.error = nil
     }
 
     
