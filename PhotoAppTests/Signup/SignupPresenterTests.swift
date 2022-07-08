@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import PhotoApp
 
 class SignupPresenterTests: XCTestCase {
 
@@ -20,10 +21,11 @@ class SignupPresenterTests: XCTestCase {
     
     func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         //Arrange
+        let signupFormModel = SignupFormModel()
         
         //Act
         
-        //Assert 
+        //Assert
     }
 
 }
