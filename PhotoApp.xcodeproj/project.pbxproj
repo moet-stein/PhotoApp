@@ -126,7 +126,7 @@
 		60AD1AF528770638003E32D8 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				60AD1B0228786F1B003E32D8 /* New Group */,
+				60AD1B0228786F1B003E32D8 /* Presenters */,
 				60AD1AF8287706B5003E32D8 /* Network */,
 				60AD1AF728770683003E32D8 /* Controllers */,
 				60AD1AF628770641003E32D8 /* Models */,
@@ -193,11 +193,11 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		60AD1B0228786F1B003E32D8 /* New Group */ = {
+		60AD1B0228786F1B003E32D8 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
