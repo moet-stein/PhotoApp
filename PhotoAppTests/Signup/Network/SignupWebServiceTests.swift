@@ -13,7 +13,7 @@ class SignupWebServiceTests: XCTestCase {
     var sut: SignupWebService!
     var signFromRequestFormModel: SignupFormRequestModel!
 
-    override func setUpWithError() throws {
+    override func setUp() {
         let config = URLSessionConfiguration.ephemeral
         config.protocolClasses = [MockURLProtocol.self]
         let urlSession = URLSession(configuration: config)
@@ -21,7 +21,7 @@ class SignupWebServiceTests: XCTestCase {
         signFromRequestFormModel = SignupFormRequestModel(firstName: "Moe", lastName: "Stein", email: "test@test.com", password: "12345678")
     }
 
-    override func tearDownWithError() throws {
+    override func tearDown() {
         sut = nil
         signFromRequestFormModel = nil
         MockURLProtocol.stubResponseData = nil
