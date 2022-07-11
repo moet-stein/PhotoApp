@@ -51,8 +51,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="NFh-B8-UJy" id="NIA-Sp-VrJ"/>
-                        <outlet property="firstNameTextField" destination="yUc-Ss-gBB" id="6D1-6K-7t7"/>
+                        <outlet property="emailTextField" destination="NFh-B8-UJy" id="THX-jj-wQ9"/>
+                        <outlet property="firstNameTextField" destination="yUc-Ss-gBB" id="yfC-wK-Xp5"/>
                         <outlet property="lastNameTextField" destination="fkP-Qz-azc" id="oTS-eG-z31"/>
                         <outlet property="passwordTextField" destination="IcP-Ry-Cy9" id="OTx-fV-hz8"/>
                         <outlet property="repeatPasswordTextField" destination="fhY-x7-KNw" id="HKT-TC-nGQ"/>
