@@ -100,5 +100,4 @@ class SignupWebServiceTests: XCTestCase {
         self.wait(for: [expectation], timeout: 2)
       
     }
-
 }
