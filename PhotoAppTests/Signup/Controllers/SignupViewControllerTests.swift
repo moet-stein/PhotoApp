@@ -22,5 +22,7 @@ class SignupViewControllerTests: XCTestCase {
     func testSignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let sut = storyboard.instantiateViewController(identifier: "SignupViewController") as? SignupViewController
+        
+        XCTAssertEqual(sut.userFirstNameTextField.text, "")
     }
 }
