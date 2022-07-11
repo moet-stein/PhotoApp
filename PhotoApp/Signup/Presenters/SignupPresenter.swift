@@ -42,6 +42,7 @@ class SignupPresenter {
         }
         
         let requestModel = SignupFormRequestModel(firstName: formModel.firstName, lastName: formModel.lastName, email: formModel.email, password: formModel.password)
+        
         webservice.signup(withForm: requestModel) { [weak self] (responseModel, error) in
             
             if let _ = responseModel {
