@@ -70,6 +70,15 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a lastName that is longer than \(SignupConstants.lastNameMaxLength) characteres but returned TRUE")
     }
     
+    // MARK: - Username Validation
+    
+    func testUserNameValidator_WhenInvalidCharactersProvided_ThrowsAnError() {
+        
+        XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
+            XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
+        }
+    }
+    
     // MARK: - Email Validation
     
     func testSignFormModelValidator_WhenValidEmailProvided_ShouldReturnTrue() {
