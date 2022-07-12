@@ -31,7 +31,7 @@ class SignupFormModelValidator: SignupModelValidatorProtocol {
         return returnValue
     }
     
-    func usernameValid(username: String) throws -> Bool {
+    func isUsernameValid(username: String) throws -> Bool {
         var returnValue = true
         
         if username.rangeOfCharacter(from: invalidCharacters) != nil {
