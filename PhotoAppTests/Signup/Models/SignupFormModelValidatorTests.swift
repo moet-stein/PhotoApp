@@ -74,23 +74,31 @@ class SignupFormModelValidatorTests: XCTestCase {
     
     func testUsernameValidator_WhenInvalidCharactersProvided_ThrowsAnError() {
         
-//        XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
-//            XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
-//        }
-        
-        do {
-            let _ = try sut.isUsernameValid(username: "steinie*")
-            XCTFail("Ths isUsernameValid() was supposed to throw an error when illigal characters used in username")
-        } catch SignupError.illegalCharactersFound {
-            return
-        } catch {
-            XCTFail("The isUsernameValid() was supposed to throw the SignupError.illegalCharactersFound Error when illigal characteres used. A different Error was thrown")
-            return
+        XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
+            XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
         }
+        
+        //Traditional way of handling error//
+//        do {
+//            let _ = try sut.isUsernameValid(username: "steinie*")
+//            XCTFail("Ths isUsernameValid() was supposed to throw an error when illigal characters used in username")
+//        } catch SignupError.illegalCharactersFound {
+//            return
+//        } catch {
+//            XCTFail("The isUsernameValid() was supposed to throw the SignupError.illegalCharactersFound Error when illigal characteres used. A different Error was thrown")
+//            return
+//        }
     }
     
     func testUsernameValidator_WhenValidCharactersProvided_ThrowsNoErrors() {
         XCTAssertNoThrow(try sut.isUsernameValid(username: "steinie"), "The isUsernameValid() should not have thrown an error when tehre are no illigal characters provided")
+
+        //Traditional way of handling error//
+//        do {
+//            let _ = try sut.isUsernameValid(username: "steinie")
+//        } catch {
+//            XCTFail("The isUsernameValid() was not supposed to thrown an error when a valid username value was provided")
+//        }
     }
     
     // MARK: - Email Validation
