@@ -17,7 +17,7 @@ enum SignupError: LocalizedError, Equatable {
         switch self {
         case .failedRequest(let description):
             return description
-        case .invalidResponseModel, .invalidRequestURLString:
+        case .invalidResponseModel, .invalidRequestURLString, .illegalCharactersFound:
             return ""
         }
     }
