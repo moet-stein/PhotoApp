@@ -27,38 +27,44 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-B8-UJy">
-                                <rect key="frame" x="30" y="172" width="354" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcP-Ry-Cy9">
                                 <rect key="frame" x="30" y="221" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcP-Ry-Cy9">
+                                <rect key="frame" x="30" y="272" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-x7-KNw">
-                                <rect key="frame" x="30" y="270" width="354" height="34"/>
+                                <rect key="frame" x="30" y="328" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq5-ia-Ptu">
-                                <rect key="frame" x="50" y="404" width="314" height="31"/>
+                                <rect key="frame" x="50" y="462" width="314" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Signup"/>
                                 <connections>
                                     <action selector="signupButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yce-fh-Mpr"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fNu-Fw-0tc">
+                                <rect key="frame" x="30" y="172" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUc-Ss-gBB" secondAttribute="trailing" constant="30" id="34R-6g-Eql"/>
+                            <constraint firstItem="NFh-B8-UJy" firstAttribute="top" secondItem="fNu-Fw-0tc" secondAttribute="bottom" constant="15" id="44u-1y-g6j"/>
                             <constraint firstItem="yUc-Ss-gBB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8Sj-WT-0TJ"/>
                             <constraint firstItem="NFh-B8-UJy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8Tr-qT-ECz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fkP-Qz-azc" secondAttribute="trailing" constant="30" id="CUh-4n-bCM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fhY-x7-KNw" secondAttribute="trailing" constant="30" id="FSe-mV-JsB"/>
-                            <constraint firstItem="fhY-x7-KNw" firstAttribute="top" secondItem="IcP-Ry-Cy9" secondAttribute="bottom" constant="15" id="GEp-tG-2RW"/>
+                            <constraint firstItem="fhY-x7-KNw" firstAttribute="top" secondItem="IcP-Ry-Cy9" secondAttribute="bottom" constant="22" id="GEp-tG-2RW"/>
                             <constraint firstItem="Uq5-ia-Ptu" firstAttribute="top" secondItem="fhY-x7-KNw" secondAttribute="bottom" constant="100" id="HtT-6U-EW0"/>
                             <constraint firstItem="yUc-Ss-gBB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="O9d-HO-JnU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NFh-B8-UJy" secondAttribute="trailing" constant="30" id="TSA-ES-5HL"/>
@@ -66,8 +72,10 @@
                             <constraint firstItem="fhY-x7-KNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UgN-XK-KqH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uq5-ia-Ptu" secondAttribute="trailing" constant="50" id="V0N-4s-bXv"/>
                             <constraint firstItem="fkP-Qz-azc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Vvc-2P-VKm"/>
-                            <constraint firstItem="IcP-Ry-Cy9" firstAttribute="top" secondItem="NFh-B8-UJy" secondAttribute="bottom" constant="15" id="fTV-N1-to3"/>
-                            <constraint firstItem="NFh-B8-UJy" firstAttribute="top" secondItem="fkP-Qz-azc" secondAttribute="bottom" constant="15" id="iRt-vi-0X5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fNu-Fw-0tc" secondAttribute="trailing" constant="30" id="Znq-th-0ay"/>
+                            <constraint firstItem="fNu-Fw-0tc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cDT-c2-hQA"/>
+                            <constraint firstItem="IcP-Ry-Cy9" firstAttribute="top" secondItem="NFh-B8-UJy" secondAttribute="bottom" constant="17" id="fTV-N1-to3"/>
+                            <constraint firstItem="fNu-Fw-0tc" firstAttribute="top" secondItem="fkP-Qz-azc" secondAttribute="bottom" constant="15" id="hPL-kh-xRH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IcP-Ry-Cy9" secondAttribute="trailing" constant="30" id="jOv-cl-8aY"/>
                             <constraint firstItem="Uq5-ia-Ptu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wyi-RQ-SXd"/>
                             <constraint firstItem="fkP-Qz-azc" firstAttribute="top" secondItem="yUc-Ss-gBB" secondAttribute="bottom" constant="15" id="zpr-bb-yNi"/>
@@ -80,6 +88,7 @@
                         <outlet property="passwordTextField" destination="IcP-Ry-Cy9" id="OTx-fV-hz8"/>
                         <outlet property="repeatPasswordTextField" destination="fhY-x7-KNw" id="HKT-TC-nGQ"/>
                         <outlet property="signupButton" destination="Uq5-ia-Ptu" id="DOF-IL-vmg"/>
+                        <outlet property="usernameTextField" destination="fNu-Fw-0tc" id="GI5-Gk-wg2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
