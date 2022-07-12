@@ -72,11 +72,15 @@ class SignupFormModelValidatorTests: XCTestCase {
     
     // MARK: - Username Validation
     
-    func testUserNameValidator_WhenInvalidCharactersProvided_ThrowsAnError() {
+    func testUsernameValidator_WhenInvalidCharactersProvided_ThrowsAnError() {
         
         XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
             XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
         }
+    }
+    
+    func testUsernameValidator_WhenValidCharactersProvided_ThrowsNoErrors() {
+        XCTAssertNoThrow(try sut.isUsernameValid(username: "steinie"), "The isUsernameValid() should not have thrown an error when tehre are no illigal characters provided")
     }
     
     // MARK: - Email Validation
