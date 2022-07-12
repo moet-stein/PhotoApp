@@ -9,6 +9,7 @@ import Foundation
 
 
 class SignupFormModelValidator: SignupModelValidatorProtocol {
+    private let invalidCharacters = CharacterSet(charactersIn: "{}$#%*&.m/?!@")
     
     func isFirstNameValid(firstName: String) -> Bool {
         var returnValue = true
@@ -24,6 +25,20 @@ class SignupFormModelValidator: SignupModelValidatorProtocol {
         var returnValue = true
         
         if lastName.count < SignupConstants.lastNameMinLength || lastName.count > SignupConstants.lastNameMaxLength {
+            returnValue = false
+        }
+        
+        return returnValue
+    }
+    
+    func usernameValid(username: String) throws -> Bool {
+        var returnValue = true
+        
+        if username.rangeOfCharacter(from: invalidCharacters) != nil {
+            throw SignupError.illegalCharactersFound
+        }
+        
+        if username.count < SignupConstants.usernameMinLength || username.count > SignupConstants.usernameMaxLength {
             returnValue = false
         }
         

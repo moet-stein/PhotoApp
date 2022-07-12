@@ -11,6 +11,7 @@ enum SignupError: LocalizedError, Equatable {
     case invalidResponseModel
     case invalidRequestURLString
     case failedRequest(description: String)
+    case illegalCharactersFound
     
     var errorDescription: String? {
         switch self {
