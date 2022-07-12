@@ -26,7 +26,6 @@ class SignupPresenterTests: XCTestCase {
         mockSignupWebService = MockSignupWebService()
         mockSignupViewDelegate = MockSignupViewDelegate()
         sut = SignupPresenter(formModelValidator: mockSignupModelValidator, webservice: mockSignupWebService, delegate: mockSignupViewDelegate)
-        
     }
 
     override func tearDown() {
@@ -71,7 +70,6 @@ class SignupPresenterTests: XCTestCase {
         //Assert
         XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1, "The successfulSignup() method was called more than one time")
     }
-
 
     func testSignupPresenter_WhenSignupOperationFails_ShouldCallErrorOnDelegate() {
         let errorHandlerExpectation = expectation(description: "Expected the errorHandler() method to be called")

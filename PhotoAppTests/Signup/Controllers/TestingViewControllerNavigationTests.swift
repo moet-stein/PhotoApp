@@ -11,6 +11,7 @@ import XCTest
 class TestingViewControllerNavigationTests: XCTestCase {
     
     var sut: SignupViewController!
+    var navigationController: UINavigationController!
 
     override func setUpWithError() throws {
         
@@ -19,10 +20,27 @@ class TestingViewControllerNavigationTests: XCTestCase {
         sut = storyboard.instantiateViewController(identifier: "SignupViewController") as? SignupViewController
         
         sut.loadViewIfNeeded()
+        navigationController = UINavigationController(rootViewController: sut)
     }
 
     override func tearDownWithError() throws {
         sut = nil
+        navigationController = nil
+    }
+    
+    func testSignupViewController_WhenSuccessfulSignup_SecondViewControllerPushed() {
+
+        let myPredicate = NSPredicate { input, _ in
+            return (input as? UINavigationController)?.topViewController is SecondViewController
+        }
+
+        expectation(for: myPredicate, evaluatedWith: navigationController)
+
+//        sut.signupButton.sendActions(for: .touchUpInside)
+
+        sut.successfulSignup()
+        
+        waitForExpectations(timeout: 1.5)
     }
 
 }
