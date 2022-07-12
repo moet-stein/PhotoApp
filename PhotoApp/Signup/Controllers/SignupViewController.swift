@@ -39,7 +39,8 @@ class SignupViewController: UIViewController {
 
 extension SignupViewController: SignupViewDelegateProtocol {
     func successfulSignup() {
-        // TODO:
+        let newView = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.navigationController?.pushViewController(newView, animated: true)
     }
     
     func errorHandler(error: SignupError) {

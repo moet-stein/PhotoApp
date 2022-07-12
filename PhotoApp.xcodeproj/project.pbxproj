@@ -35,6 +35,7 @@
 		60DF2485287C7AFD00FC3881 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF2484287C7AFD00FC3881 /* MockSignupPresenter.swift */; };
 		60DF2487287C7BAE00FC3881 /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF2486287C7BAE00FC3881 /* SignupPresenterProtocol.swift */; };
 		60DF24C0287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */; };
+		60DF24C2287DAC1000FC3881 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24C1287DAC1000FC3881 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		60DF2484287C7AFD00FC3881 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		60DF2486287C7BAE00FC3881 /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewControllerUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
+		60DF24C1287DAC1000FC3881 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				60AD1B17287C6ADE003E32D8 /* SignupViewController.swift */,
+				60DF24C1287DAC1000FC3881 /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DF24C2287DAC1000FC3881 /* SecondViewController.swift in Sources */,
 				60DF2487287C7BAE00FC3881 /* SignupPresenterProtocol.swift in Sources */,
 				60AD1B0428786F28003E32D8 /* SignupPresenter.swift in Sources */,
 				609C3CC72875CD820021AEA3 /* AppDelegate.swift in Sources */,
