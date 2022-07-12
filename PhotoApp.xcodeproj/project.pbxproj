@@ -34,6 +34,7 @@
 		60AD1B18287C6ADE003E32D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD1B17287C6ADE003E32D8 /* SignupViewController.swift */; };
 		60DF2485287C7AFD00FC3881 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF2484287C7AFD00FC3881 /* MockSignupPresenter.swift */; };
 		60DF2487287C7BAE00FC3881 /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF2486287C7BAE00FC3881 /* SignupPresenterProtocol.swift */; };
+		60DF24C0287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		60AD1B17287C6ADE003E32D8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		60DF2484287C7AFD00FC3881 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		60DF2486287C7BAE00FC3881 /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
+		60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewControllerUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				60AD1B15287C69EC003E32D8 /* SignupViewControllerTests.swift */,
+				60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				60AD1AFD287715AE003E32D8 /* MockURLProtocol.swift in Sources */,
 				60AD1B16287C69EC003E32D8 /* SignupViewControllerTests.swift in Sources */,
 				60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */,
+				60DF24C0287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift in Sources */,
 				60AD1AFF28786D91003E32D8 /* SignupPresenterTests.swift in Sources */,
 				60AD1B0628786FF1003E32D8 /* MockSignupModelValidator.swift in Sources */,
 				609C3CE82875CDEB0021AEA3 /* SignupFormModelValidatorTests.swift in Sources */,
