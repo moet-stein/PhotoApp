@@ -74,8 +74,18 @@ class SignupFormModelValidatorTests: XCTestCase {
     
     func testUsernameValidator_WhenInvalidCharactersProvided_ThrowsAnError() {
         
-        XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
-            XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
+//        XCTAssertThrowsError(try sut.isUsernameValid(username: "steinie*"), "The isUsernameValid() should have thrown an error if username contains illegal characters") { error in
+//            XCTAssertEqual(error as? SignupError, SignupError.illegalCharactersFound)
+//        }
+        
+        do {
+            let _ = try sut.isUsernameValid(username: "steinie*")
+            XCTFail("Ths isUsernameValid() was supposed to throw an error when illigal characters used in username")
+        } catch SignupError.illegalCharactersFound {
+            return
+        } catch {
+            XCTFail("The isUsernameValid() was supposed to throw the SignupError.illegalCharactersFound Error when illigal characteres used. A different Error was thrown")
+            return
         }
     }
     
