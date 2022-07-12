@@ -24,5 +24,10 @@ class SignupViewControllerUITextFieldPropertiesTests: XCTestCase {
         sut = nil
     }
 
+    func testEmailTextField_WhenCreated_HasEmailAddressContentTypeSet() throws {
+        let emailTextField = try XCTUnwrap(sut.emailTextField, "Email address UITextField is not connected")
+        
+        XCTAssertEqual(emailTextField.textContentType, UITextContentType.emailAddress, "Email address UITextField does not have an Email Address Content Type")
+    }
 
 }
