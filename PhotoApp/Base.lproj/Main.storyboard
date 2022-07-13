@@ -66,7 +66,7 @@
                                 <rect key="frame" x="50" y="421" width="314" height="31"/>
                                 <accessibility key="accessibilityConfiguration" identifier="signupButton"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Signup"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Signup"/>
                                 <connections>
                                     <action selector="signupButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yce-fh-Mpr"/>
                                 </connections>
@@ -77,6 +77,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="continue" textContentType="nickname"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCA-ag-A3C">
+                                <rect key="frame" x="30" y="552" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-8z-jNK">
+                                <rect key="frame" x="100" y="588" width="214" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Login"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,6 +96,7 @@
                             <constraint firstItem="NFh-B8-UJy" firstAttribute="top" secondItem="fNu-Fw-0tc" secondAttribute="bottom" constant="15" id="44u-1y-g6j"/>
                             <constraint firstItem="yUc-Ss-gBB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8Sj-WT-0TJ"/>
                             <constraint firstItem="NFh-B8-UJy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8Tr-qT-ECz"/>
+                            <constraint firstItem="FCA-ag-A3C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CIg-eG-g7Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fkP-Qz-azc" secondAttribute="trailing" constant="30" id="CUh-4n-bCM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fhY-x7-KNw" secondAttribute="trailing" constant="30" id="FSe-mV-JsB"/>
                             <constraint firstItem="fhY-x7-KNw" firstAttribute="top" secondItem="IcP-Ry-Cy9" secondAttribute="bottom" constant="22" id="GEp-tG-2RW"/>
@@ -93,13 +105,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NFh-B8-UJy" secondAttribute="trailing" constant="30" id="TSA-ES-5HL"/>
                             <constraint firstItem="IcP-Ry-Cy9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Td7-d1-KUC"/>
                             <constraint firstItem="fhY-x7-KNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UgN-XK-KqH"/>
+                            <constraint firstItem="FCA-ag-A3C" firstAttribute="top" secondItem="Uq5-ia-Ptu" secondAttribute="bottom" constant="100" id="UnP-nx-DkU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uq5-ia-Ptu" secondAttribute="trailing" constant="50" id="V0N-4s-bXv"/>
                             <constraint firstItem="fkP-Qz-azc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Vvc-2P-VKm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fNu-Fw-0tc" secondAttribute="trailing" constant="30" id="Znq-th-0ay"/>
                             <constraint firstItem="fNu-Fw-0tc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cDT-c2-hQA"/>
                             <constraint firstItem="IcP-Ry-Cy9" firstAttribute="top" secondItem="NFh-B8-UJy" secondAttribute="bottom" constant="17" id="fTV-N1-to3"/>
                             <constraint firstItem="fNu-Fw-0tc" firstAttribute="top" secondItem="fkP-Qz-azc" secondAttribute="bottom" constant="15" id="hPL-kh-xRH"/>
+                            <constraint firstItem="ecd-8z-jNK" firstAttribute="top" secondItem="FCA-ag-A3C" secondAttribute="bottom" constant="15" id="iZD-1q-oP4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IcP-Ry-Cy9" secondAttribute="trailing" constant="30" id="jOv-cl-8aY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecd-8z-jNK" secondAttribute="trailing" constant="100" id="jkE-9z-yZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FCA-ag-A3C" secondAttribute="trailing" constant="30" id="qh4-U4-Cev"/>
+                            <constraint firstItem="ecd-8z-jNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="qrU-uJ-P2R"/>
                             <constraint firstItem="Uq5-ia-Ptu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wyi-RQ-SXd"/>
                             <constraint firstItem="fkP-Qz-azc" firstAttribute="top" secondItem="yUc-Ss-gBB" secondAttribute="bottom" constant="15" id="zpr-bb-yNi"/>
                         </constraints>
