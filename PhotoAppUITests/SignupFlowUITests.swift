@@ -1,0 +1,55 @@
+//
+//  SignupFlowUITests.swift
+//  SignupFlowUITests
+//
+//  Created by Moe Steinmueller on 13.07.22.
+//
+
+import XCTest
+
+class SignupFlowUITests: XCTestCase {
+
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        // In UI tests it is usually best to stop immediately when a failure occurs.
+        continueAfterFailure = false
+
+        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
+    func testSignupViewController_WhenViewLoaded_RequiredUIElementsAreEnabled() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        let firstName = app.textFields["First Name"]
+        let lastName = app.textFields["Last Name"]
+        let username = app.textFields["Username"]
+        let email = app.textFields["Email"]
+        let password = app.secureTextFields["Password"]
+        let repeatPassword = app.secureTextFields["Repeat Password"]
+        let signupButton = app.buttons["Signup"]
+        
+        XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions")
+        XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions")
+        XCTAssertTrue(username.isEnabled, "Username UITextField is not enabled for user interactions")
+        XCTAssertTrue(email.isEnabled, "Email UITextField is not enabled for user interactions")
+        XCTAssertTrue(password.isEnabled, "Password UITextField is not enabled for user interactions")
+        XCTAssertTrue(repeatPassword.isEnabled, "RepeatPassword UITextField is not enabled for user interactions")
+        XCTAssertTrue(signupButton.isEnabled, "SignupButton UITextField is not enabled for user interactions")
+    }
+
+    func testLaunchPerformance() throws {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+            // This measures how long it takes to launch your application.
+            measure(metrics: [XCTApplicationLaunchMetric()]) {
+                XCUIApplication().launch()
+            }
+        }
+    }
+}

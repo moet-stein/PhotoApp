@@ -1,6 +1,6 @@
 //
 //  PhotoAppUITestsLaunchTests.swift
-//  PhotoAppUITests
+//  SignupFlowUITests
 //
 //  Created by Moe Steinmueller on 13.07.22.
 //
