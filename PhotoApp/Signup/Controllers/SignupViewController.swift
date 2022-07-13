@@ -30,9 +30,13 @@ class SignupViewController: UIViewController {
     }
 
     @IBAction func signupButtonTapped(_ sender: Any) {
-        let signupFormModel = SignupFormModel(firstName: firstNameTextField.text ?? "", lastName: lastNameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "", repeatPassword: repeatPasswordTextField.text ?? "")
+        let signupFormModel = SignupFormModel(firstName: firstNameTextField.text ?? "", lastName: lastNameTextField.text ?? "", username: usernameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "", repeatPassword: repeatPasswordTextField.text ?? "")
         
-        signupPresenter?.processUserSignup(formModel: signupFormModel)
+        do {
+         try signupPresenter?.processUserSignup(formModel: signupFormModel)
+        } catch {
+            
+        }
     }
     
 }
@@ -44,7 +48,13 @@ extension SignupViewController: SignupViewDelegateProtocol {
     }
     
     func errorHandler(error: SignupError) {
-        // TODO:
+        let alert = UIAlertController(title: "Error", message: "Your request could not be processed at this time", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        
+        DispatchQueue.main.async {
+            alert.view.accessibilityIdentifier = "errorAlertDialog"
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     

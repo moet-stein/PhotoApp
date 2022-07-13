@@ -67,7 +67,7 @@ class SignupFlowUITests: XCTestCase {
         
         let password = app.secureTextFields["passwordTextField"]
         password.tap()
-        password.typeText("12345")
+        password.typeText("12")
         
         let repeatPassword = app.secureTextFields["repeatPasswordTextField"]
         repeatPassword.tap()

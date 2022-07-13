@@ -18,10 +18,11 @@ class SignupPresenterTests: XCTestCase {
 
     override func setUp() {
         signupFormModel = SignupFormModel(firstName: "Moe",
-                                              lastName: "Stein",
-                                              email: "test@test.com",
-                                              password: "12345678",
-                                              repeatPassword: "12345678")
+                                          lastName: "Stein",
+                                          username: "moeste",
+                                          email: "test@test.com",
+                                          password: "12345678",
+                                          repeatPassword: "12345678")
         mockSignupModelValidator = MockSignupModelValidator()
         mockSignupWebService = MockSignupWebService()
         mockSignupViewDelegate = MockSignupViewDelegate()
@@ -37,9 +38,9 @@ class SignupPresenterTests: XCTestCase {
     }
 
     
-    func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
+    func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() throws {
         //Act
-        sut.processUserSignup(formModel: signupFormModel)
+        try sut.processUserSignup(formModel: signupFormModel)
         
         //Assert
         XCTAssertTrue(mockSignupModelValidator.isFirstNameValidated, "First name was not validated")
@@ -49,34 +50,34 @@ class SignupPresenterTests: XCTestCase {
         XCTAssertTrue(mockSignupModelValidator.isPasswordEqualityValidated, "Did not validate two passwords match")
     }
     
-    func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() {
+    func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() throws {
         //Act
-        sut.processUserSignup(formModel: signupFormModel)
+        try sut.processUserSignup(formModel: signupFormModel)
         
         //Assert
         XCTAssertTrue(mockSignupWebService.isSignupMethodCalled, "The signup() method was not called in the SignupWebService class")
     }
     
-    func testSignupPresenter_WhenSignupOperationSuccessful_CallsSuccessOnViewDelegate() {
+    func testSignupPresenter_WhenSignupOperationSuccessful_CallsSuccessOnViewDelegate() throws {
         // Arrange
         let myExpectation = expectation(description: "Expected the successfulSignup() method to be called")
         
         mockSignupViewDelegate.expectation = myExpectation
         
         // Act
-        sut.processUserSignup(formModel: signupFormModel)
+        try sut.processUserSignup(formModel: signupFormModel)
         self.wait(for: [myExpectation], timeout: 5)
         
         //Assert
         XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1, "The successfulSignup() method was called more than one time")
     }
 
-    func testSignupPresenter_WhenSignupOperationFails_ShouldCallErrorOnDelegate() {
+    func testSignupPresenter_WhenSignupOperationFails_ShouldCallErrorOnDelegate() throws {
         let errorHandlerExpectation = expectation(description: "Expected the errorHandler() method to be called")
         mockSignupViewDelegate.expectation = errorHandlerExpectation
         mockSignupWebService.shouldReturnError = true
         
-        sut.processUserSignup(formModel: signupFormModel)
+        try sut.processUserSignup(formModel: signupFormModel)
         self.wait(for: [errorHandlerExpectation], timeout: 5)
         
         //Assert
