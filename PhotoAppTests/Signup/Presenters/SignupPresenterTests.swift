@@ -76,7 +76,6 @@ class SignupPresenterTests: XCTestCase {
         mockSignupViewDelegate.expectation = errorHandlerExpectation
         mockSignupWebService.shouldReturnError = true
         
-        //Act
         sut.processUserSignup(formModel: signupFormModel)
         self.wait(for: [errorHandlerExpectation], timeout: 5)
         
