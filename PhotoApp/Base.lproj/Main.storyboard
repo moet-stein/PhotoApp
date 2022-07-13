@@ -85,6 +85,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-8z-jNK">
                                 <rect key="frame" x="100" y="588" width="214" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginButton"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Login"/>
                                 <connections>

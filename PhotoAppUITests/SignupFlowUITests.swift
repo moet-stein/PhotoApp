@@ -17,6 +17,7 @@ class SignupFlowUITests: XCTestCase {
     private var password: XCUIElement!
     private var repeatPassword: XCUIElement!
     private var signupButton: XCUIElement!
+    private var loginButton: XCUIElement!
 
     override func setUpWithError() throws {
 
@@ -32,6 +33,7 @@ class SignupFlowUITests: XCTestCase {
         password = app.secureTextFields["passwordTextField"]
         repeatPassword = app.secureTextFields["repeatPasswordTextField"]
         signupButton = app.buttons["signupButton"]
+        loginButton = app.buttons["loginButton"]
         
         continueAfterFailure = false
     }
@@ -45,6 +47,7 @@ class SignupFlowUITests: XCTestCase {
         password = nil
         repeatPassword = nil
         signupButton = nil
+        loginButton = nil
         
         try super.tearDownWithError()
     }
@@ -57,7 +60,8 @@ class SignupFlowUITests: XCTestCase {
         XCTAssertTrue(email.isEnabled, "Email UITextField is not enabled for user interactions")
         XCTAssertTrue(password.isEnabled, "Password UITextField is not enabled for user interactions")
         XCTAssertTrue(repeatPassword.isEnabled, "RepeatPassword UITextField is not enabled for user interactions")
-        XCTAssertTrue(signupButton.isEnabled, "SignupButton UITextField is not enabled for user interactions")
+        XCTAssertTrue(signupButton.isEnabled, "SignupButton is not enabled for user interactions")
+        XCTAssertTrue(loginButton.isEnabled, "LoginButton is not enabled for user interactions")
     }
     
     func testViewController_WhenInvalidFormSubmitted_PresentesErrorDialog() {
