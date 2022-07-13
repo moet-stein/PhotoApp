@@ -40,13 +40,13 @@ class TestingViewControllerNavigationTests: XCTestCase {
 
         sut.successfulSignup()
         
-        waitForExpectations(timeout: 1.5)
+        waitForExpectations(timeout: 3)
     }
     
     func testSignupViewController_WhenSuccessfulSignup_SecondViewControllerPushed_V2() {
         sut.successfulSignup()
         
-        RunLoop.current.run(until: Date())
+        RunLoop.current.run(until: Date() + 3)
         
         guard let _ = navigationController.topViewController as? SecondViewController else {
             XCTFail()
@@ -58,6 +58,7 @@ class TestingViewControllerNavigationTests: XCTestCase {
         let spyNavigationController = SpyNavigationController(rootViewController: sut)
         
         sut.successfulSignup()
+        RunLoop.current.run(until: Date() + 3)
         
         guard let _ = spyNavigationController.pushedViewController as? SecondViewController else {
             XCTFail()
