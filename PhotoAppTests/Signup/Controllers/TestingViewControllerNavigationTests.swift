@@ -53,5 +53,16 @@ class TestingViewControllerNavigationTests: XCTestCase {
             return
         }
     }
+    
+    func testSignupViewController_WhenSuccessfulSignup_SecondViewControllerPushed_V3() {
+        let spyNavigationController = SpyNavigationController(rootViewController: sut)
+        
+        sut.successfulSignup()
+        
+        guard let _ = spyNavigationController.pushedViewController as? SecondViewController else {
+            XCTFail()
+            return
+        }
+    }
 
 }
