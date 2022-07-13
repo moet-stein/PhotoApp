@@ -37,6 +37,7 @@
 		60DF24C0287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */; };
 		60DF24C2287DAC1000FC3881 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24C1287DAC1000FC3881 /* SecondViewController.swift */; };
 		60DF24C4287DC94900FC3881 /* TestingViewControllerNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24C3287DC94900FC3881 /* TestingViewControllerNavigationTests.swift */; };
+		60DF24CD287EBA6400FC3881 /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF24CC287EBA6400FC3881 /* SpyNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		60DF24BF287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewControllerUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
 		60DF24C1287DAC1000FC3881 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		60DF24C3287DC94900FC3881 /* TestingViewControllerNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewControllerNavigationTests.swift; sourceTree = "<group>"; };
+		60DF24CC287EBA6400FC3881 /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				60AD1B14287C69D6003E32D8 /* Controllers */,
 				60AD1B0B287879CB003E32D8 /* Mocks */,
+				60DF24CB287EBA4600FC3881 /* Spys */,
 				60AD1B0A287879B9003E32D8 /* Presenters */,
 				60AD1AFB287706DE003E32D8 /* Network */,
 				60AD1AFA287706D8003E32D8 /* Models */,
@@ -260,6 +263,14 @@
 				60DF24C3287DC94900FC3881 /* TestingViewControllerNavigationTests.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60DF24CB287EBA4600FC3881 /* Spys */ = {
+			isa = PBXGroup;
+			children = (
+				60DF24CC287EBA6400FC3881 /* SpyNavigationController.swift */,
+			);
+			path = Spys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +401,7 @@
 				60AD1B0D287C4837003E32D8 /* MockSignupWebService.swift in Sources */,
 				60AD1AFD287715AE003E32D8 /* MockURLProtocol.swift in Sources */,
 				60AD1B16287C69EC003E32D8 /* SignupViewControllerTests.swift in Sources */,
+				60DF24CD287EBA6400FC3881 /* SpyNavigationController.swift in Sources */,
 				60AD1AEC2876E758003E32D8 /* SignupWebServiceTests.swift in Sources */,
 				60DF24C0287DA72600FC3881 /* SignupViewControllerUITextFieldPropertiesTests.swift in Sources */,
 				60AD1AFF28786D91003E32D8 /* SignupPresenterTests.swift in Sources */,
