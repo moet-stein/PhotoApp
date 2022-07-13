@@ -119,6 +119,12 @@ class SignupFlowUITests: XCTestCase {
         // Assert
         XCTAssertTrue(app.alerts["successAlertDialog"].waitForExistence(timeout: 1), "An Success Alert dialog was not presented when valid signup form was submitted")
     }
+    
+    func testLoginButton_WhenTapped_PresentLoginViewController() {
+        loginButton.tap()
+        
+        XCTAssertTrue(app.otherElements["LoginViewController"].waitForExistence(timeout: 1), "The LoginViewController was not presented when the loginButton was tapped")
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {

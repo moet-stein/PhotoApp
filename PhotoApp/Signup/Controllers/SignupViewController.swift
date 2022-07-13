@@ -43,7 +43,9 @@ class SignupViewController: UIViewController {
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         let newView = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        newView.view.accessibilityIdentifier = "LoginViewController"
         self.navigationController?.pushViewController(newView, animated: true)
+        
     }
     
 }
