@@ -15,6 +15,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     var signupPresenter: SignupPresenterProtocol?
     
@@ -37,6 +38,12 @@ class SignupViewController: UIViewController {
         } catch {
             
         }
+    }
+    
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        let newView = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.navigationController?.pushViewController(newView, animated: true)
     }
     
 }

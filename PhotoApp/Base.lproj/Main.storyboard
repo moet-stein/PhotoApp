@@ -87,6 +87,9 @@
                                 <rect key="frame" x="100" y="588" width="214" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByS-XU-cwC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -126,6 +129,7 @@
                         <outlet property="emailTextField" destination="NFh-B8-UJy" id="THX-jj-wQ9"/>
                         <outlet property="firstNameTextField" destination="yUc-Ss-gBB" id="yfC-wK-Xp5"/>
                         <outlet property="lastNameTextField" destination="fkP-Qz-azc" id="oTS-eG-z31"/>
+                        <outlet property="loginButton" destination="ecd-8z-jNK" id="7FY-Rm-vbA"/>
                         <outlet property="passwordTextField" destination="IcP-Ry-Cy9" id="OTx-fV-hz8"/>
                         <outlet property="repeatPasswordTextField" destination="fhY-x7-KNw" id="HKT-TC-nGQ"/>
                         <outlet property="signupButton" destination="Uq5-ia-Ptu" id="DOF-IL-vmg"/>
@@ -150,6 +154,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooH-cZ-aP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="519" y="132"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="m2o-I8-LG3">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="xfG-kC-z1h" customClass="LoginViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7lk-Fu-hif">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-yz-eel">
+                                <rect key="frame" x="102.5" y="437.5" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.92941176889999999" green="0.44705885649999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nNk-ne-JgL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gy7-yz-eel" firstAttribute="centerX" secondItem="7lk-Fu-hif" secondAttribute="centerX" id="1yr-8p-c3L"/>
+                            <constraint firstItem="gy7-yz-eel" firstAttribute="centerY" secondItem="7lk-Fu-hif" secondAttribute="centerY" id="gYW-9V-1XD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9P-AT-o0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="795"/>
         </scene>
     </scenes>
     <resources>
