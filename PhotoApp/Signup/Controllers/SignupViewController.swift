@@ -43,8 +43,16 @@ class SignupViewController: UIViewController {
 
 extension SignupViewController: SignupViewDelegateProtocol {
     func successfulSignup() {
-        let newView = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        self.navigationController?.pushViewController(newView, animated: true)
+        let alert = UIAlertController(title: "Success", message: "The signup operation was successful", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            let newView = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+            self.navigationController?.pushViewController(newView, animated: true)
+        }))
+        
+        DispatchQueue.main.async {
+            alert.view.accessibilityIdentifier = "successAlertDialog"
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func errorHandler(error: SignupError) {

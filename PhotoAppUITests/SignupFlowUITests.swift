@@ -98,10 +98,10 @@ class SignupFlowUITests: XCTestCase {
         lastName.typeText("Stein")
         
         username.tap()
-        username.typeText("mstein")
+        username.typeText("hello")
         
         email.tap()
-        email.typeText("test@test.com")
+        email.typeText("test@google.com")
         
         password.tap()
         password.typeText("12345678")
