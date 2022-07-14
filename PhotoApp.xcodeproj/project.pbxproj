@@ -61,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		601A4CF9288029740003B258 /* PhotoApp-UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestPlan.xctestplan"; sourceTree = "<group>"; };
+		601A4CFC288042D90003B258 /* PhotoApp-UnitTestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UnitTestsPlan.xctestplan"; sourceTree = "<group>"; };
+		601A4CFD2880435D0003B258 /* PhotoApp-MainTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-MainTestPlan.xctestplan"; sourceTree = "<group>"; };
 		6083A95A287EC2B5001CCB9F /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6083A95C287EC2B5001CCB9F /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		6083A95E287EC2B5001CCB9F /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 		6083A95B287EC2B5001CCB9F /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				601A4CF9288029740003B258 /* PhotoApp-UITestPlan.xctestplan */,
 				6083A95C287EC2B5001CCB9F /* SignupFlowUITests.swift */,
 				6083A95E287EC2B5001CCB9F /* PhotoAppUITestsLaunchTests.swift */,
 			);
@@ -138,6 +142,7 @@
 		609C3CBA2875CD820021AEA3 = {
 			isa = PBXGroup;
 			children = (
+				601A4CFD2880435D0003B258 /* PhotoApp-MainTestPlan.xctestplan */,
 				609C3CC52875CD820021AEA3 /* PhotoApp */,
 				609C3CDF2875CDAD0021AEA3 /* PhotoAppTests */,
 				6083A95B287EC2B5001CCB9F /* PhotoAppUITests */,
@@ -172,6 +177,7 @@
 		609C3CDF2875CDAD0021AEA3 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				601A4CFC288042D90003B258 /* PhotoApp-UnitTestsPlan.xctestplan */,
 				60AD1AF9287706CB003E32D8 /* Signup */,
 			);
 			path = PhotoAppTests;

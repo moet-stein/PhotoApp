@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "16ED2F74-FC5B-4DC2-8DE3-6B87220D93E8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PhotoApp.xcodeproj",
+        "identifier" : "609C3CDD2875CDAD0021AEA3",
+        "name" : "PhotoAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

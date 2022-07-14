@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "4C9E3201-D45C-42A5-B7E2-2983A84F8C38",
+      "name" : "Test Server 1 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupUrl",
+            "value" : "http:\/\/appsdeveloperblog.com\/api\/v2\/signup-mock-service\/users"
+          }
+        ]
+      }
+    },
+    {
+      "id" : "EF9945DD-9B1A-47F8-A770-6A9FDFF3BA01",
+      "name" : "Test Server 2 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupUrl",
+            "value" : "https:\/\/tlyqhtlbn8.execute-api.us-east-1.amazonaws.com\/prod\/signup-mock-service\/users"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PhotoApp.xcodeproj",
+        "identifier" : "6083A959287EC2B5001CCB9F",
+        "name" : "PhotoAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
