@@ -18,7 +18,7 @@ class SignupWebServiceTests: XCTestCase {
         config.protocolClasses = [MockURLProtocol.self]
         let urlSession = URLSession(configuration: config)
         sut = SignupWebService(urlString: SignupConstants.signupURLString, urlSession: urlSession)
-        signFromRequestFormModel = SignupFormRequestModel(firstName: "Moe", lastName: "Stein", email: "test@test.com", password: "12345678")
+        signFromRequestFormModel = SignupFormRequestModel(firstName: "Moe", lastName: "Stein", username: "mstein", email: "test@test.com", password: "12345678")
     }
 
     override func tearDown() {
