@@ -1,10 +1,8 @@
 # PhotoApp
-Unit Tests
+Unit Testing & UI Testing
 
+##### This repositery is where I practiced iOS Unit Testing and UI Testing with TDD approach along with an Udemy Course [Unit Testing Swift Mobile App](https://www.udemy.com/course/unit-testing-ios-mobile-app/)
+
+##### Blow is a chart of my thoughts organizing from the project and what I learned from this course (Unit Testing part)
 ![SignupViewController](https://user-images.githubusercontent.com/66197018/179222429-c0fdaea3-f211-47af-a720-47031e6d829d.png)
-
-<object data="https://github.com/moet-stein/PhotoApp/files/9120666/UnitTestChart.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/moet-stein/PhotoApp/files/9120666/UnitTestChart.pdf">
-        <p>The pdf version of this image<a href="https://github.com/moet-stein/PhotoApp/files/9120666/UnitTestChart.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+- As it's supposed to have links, the original file is pdf. [pdf ver. download](https://github.com/moet-stein/PhotoApp/files/9120666/UnitTestChart.pdf)
